@@ -1,4 +1,4 @@
-# Priple HTML / CSS
+# Pirple HTML / CSS
 
 this is a homework repository for pirple learning sessions.
 
