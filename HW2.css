@@ -1,0 +1,46 @@
+/* CSS properties found on : https://developer.mozilla.org/fr/docs/Web/CSS/CSS_Properties_Reference */
+#full-body {
+    background-color: darkgoldenrod;
+}
+
+.plaintext, .unordered, .ordered {
+    font-size: 16px
+}
+
+#main_title, .title {
+    padding-bottom: 24px;
+}
+
+#main_title {
+    font-weight: bold;
+    font-style: italic;
+    text-decoration: underline;
+}
+
+div {
+    border: thick double black;
+    margin: 15px;
+}
+
+.unordered {
+    list-style: georgian;
+}
+
+.ordered {
+    list-style-type: upper-roman;
+}
+
+img {
+    width: 300px;
+    height: auto;
+}
+
+p > span:last-of-type {
+    font-weight: bold;
+    font-style: italic;
+}
+
+.important {
+    font-style: normal;
+    color: red;
+}
