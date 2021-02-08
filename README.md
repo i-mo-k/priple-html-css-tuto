@@ -16,3 +16,8 @@ This file is a draft file for the final HTML project using as much tags possible
   - media files such as images emoticons, and videos
   - external links
   - forms containing buttons, and text inputs
+
+## HW2.css
+HW2 file is all about styling HW1 HTML file.
+
+Starting from directly styling tags, we came all accross styling from using classes and ids on different tags all the way to pseudo-elements. It made also possible to do more fine selectivity upon with elements to style.
