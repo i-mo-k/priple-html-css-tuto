@@ -1,23 +1,112 @@
-/* CSS properties found on : https://www.tutorialrepublic.com/css-reference/css3-properties.php*/
+/* CSS properties found on : https://developer.mozilla.org/fr/docs/Web/CSS/CSS_Properties_Reference */
 body {
-    background-color: darkgoldenrod;
+    margin: 0px;
+    background-color: #fff;
+    text-align: center;
+    font-family: "微軟正黑體", "Microsoft JhengHei",  Tahoma , Verdana , Arial , sans-serif;
 }
 
-p, li {
-    font-size: 16px
-}
-
-h1, h2, h3, h4, h5, h6 {
-    padding-bottom: 24px;
+#main_title, .title {
+    font-weight: bold;
+    padding: 10px;
+    text-align: center;
+    margin: 10px 0px;
 }
 
 h1 {
-    font-weight: bold;
     font-style: italic;
     text-decoration: underline;
+    font-family: "微軟正黑體", "Microsoft JhengHei",  Tahoma , Verdana , Arial , sans-serif;
+}
+
+.important {
+    font-style: bold;
+    color: red;
+}
+
+#intro {
+    text-align: center;
+}
+
+img {
+    width: 50%;
+    height: auto;
+    margin: 15px 0px;
+}
+
+.plaintext, .unordered, .ordered {
+    font-size: 16px;
+    text-align: justify;
+    font-weight: bold;
+}
+
+.plaintext {
+    padding-right: 30px;
+}
+
+.double-border {
+    border: thick double black;
+    border-radius: 30px;
+    margin: 5px 15px;
+    padding: 2%;
 }
 
 div {
-    border: thick double black;
-    margin: 15px;
+    background-color: #ffd;
+}
+
+.ordered {
+    list-style-type: lower-roman;
+    padding-right: 15px;
+}
+
+.unordered {
+    list-style: none;
+    padding: 10px;
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+.unordered > li {
+    border: 3px solid #000;
+    border-radius: 15px;
+    background-color: #dff;
+    width: 75%;
+    margin: 5px;
+    padding: 5%;
+}
+
+#steps {
+    padding: 10px;
+    list-style-type: hangul;
+}
+
+
+#steps > li {
+    padding: 15px;
+    margin: 5px;
+    flex-shrink: 0;
+}
+
+#steps > li:first-child {
+    margin: 5px 5px 5px 0px;
+}
+
+p > span:last-of-type {
+    font-weight: bold;
+    font-style: italic;
+}
+
+h3 {
+    margin: 0px;
+    padding-top: 0px;
+}
+
+footer {
+    padding: 5px;
+    color: #fff;
+    background-color: #4af;
+    text-align: justify;
 }
