@@ -13,7 +13,8 @@ a:visited {
 }
 
 ul {
-    list-style-type: none;
+    list-style: none;
+    padding: 0;
 }
 
 button {
@@ -142,63 +143,119 @@ body {
                 }
 
     article {
-        margin: 0vw;
+        margin-top: -3vw;
         padding: 0;
         font-size: 1.5vw;
     }
 
-        .section > p {
-            font-size: 2vw;
-            font-weight: bold;
-            margin-top: 1vw;
-        }
-
-        ul.character-container {
-            width: 100%;
+        .section {
+            padding-left: 3vw;
             display: grid;
-            justify-content: space-between;
+            grid-template-columns: 2vw 1fr 2vw;
+            align-content: start;
         }
 
-                .section > ul > li {
-                    display: inline-block;
+            .section > p {
+                font-size: 2vw;
+                font-weight: bold;
+            }
+
+            .section > * {
+                grid-column: 2 / -2;
+            }
+
+            .character-container {
+                width: 100%;
+                display: grid;
+                grid-template-columns: repeat(6, 1fr);
+                grid-template-rows: minmax(150px, 1fr);
+                overflow-x: scroll;
+                scroll-snap-type: x proximity;
+            }
+
+            .full {
+                grid-column: 1 / -1;
+            }
+
+                .single-character {
+                    scroll-snap-align: center;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    margin-bottom: 3vw;
+                    margin-left: 1vw;
+                    margin-right: 1vw;
+                    width: 30vw;
                 }
 
-            .single-character {
-                margin: 0vw 1%;
-                padding: 0vw 1vw;
-                width: 40vw;
-            }
+                    .character-image {
+                        width: 30vw;
+                        height: 20vw;
+                        z-index: -1;
+                        border-radius: 2vw;
+                        padding: 0vw;
+                    }
 
-            .single-character-image {
-                width: 40vw;
-                height: 20vw;
-                z-index: -1;
-                border-radius: 2vw;
-                padding: 0vw;
-            }
+                    .character-name {
+                        margin-top: -3vw;
+                        margin-left: 2vw;
+                        font-size: 2vw;
+                        font-weight: bold;
+                        padding: 0vw;
+                    }
 
-            .character-icon {
-                width: 1em;
-                margin: 0.5%;
-                border: 1px solid white;
-                border-radius: 5em;
-                padding: 1.5em;
-            }
+                .data {
+                    width:30vw;
+                }
 
-            #play {
-                background-color: white;
-            }
+                    .character-options {
+                        display: flex;
+                        justify-content: space-between;
+                    }
 
-            .recommendation {
-                font-weight: bold;
-                color: green;
-            }
+                        .character-options > div, img {
+                            width: 50%;
+                        }
 
-            .categories {
-                list-style: circle;
-                display: flex;
-                justify-content: space-between;
-            }
+                        .character-icon {
+                            width: 1.5vw;
+                            margin: 0.5%;
+                            border: 1px solid white;
+                            border-radius: 5em;
+                            padding: 0.5vw;
+                        }
+
+                        #play {
+                            background-color: white;
+                        }
+
+                    .recommendation {
+                        font-weight: bold;
+                        color: green;
+                        margin-left: 2vw;
+                    }  
+
+                    .arc-number {
+                        font-weight: bold;
+                        margin-right: 2vw;
+                    }
+
+                    .categories {
+                        list-style: disc;
+                        display: flex;
+                        justify-content: space-around;
+                        margin-bottom: 2vw;
+                    }
+
+                    .categories > li:first-of-type {
+                        list-style: none;
+                        padding-left: 0vw;
+                    }
+
+                    .categories span {
+                        padding-left: 2vw;
+                    }
 
     footer {
         color: #777;

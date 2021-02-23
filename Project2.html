@@ -28,7 +28,7 @@
             </span>
         </div>
         <div id="hot">
-            <span>
+            <div>
                 <img class="icon" alt="N series" src="res/icons/logo.png"/> SERIES
                 <br/>
                 <img id="series-title" alt="title" src="res/icons/bleach.png"/>
@@ -42,7 +42,7 @@
                     <button id="watch" class="options"><img src="res/icons/play.png"/>Watch</button>
                     <button id="more" class="options"><img src="res/icons/info.png"/>More infos</button>
                 </div>
-            </span>
+            </div>
             <div id="hot-details">
                 <img class="icon-button" id="unmute" alt="unmute" src="res/icons/mute.png"/><p id="age-limit">16+</p>
                 
@@ -53,24 +53,407 @@
         <ul>
             <li class="section">
                 <p>Favourites</p>
-                <ul class="character-container">
+                <ul class="character-container full">
                     <li class="single-character">
                         <div>
-                            <img class="single-character-image" src="res/characters/Ichigo_Kurosaki.png"/>
+                            <img class="character-image" src="res/characters/Ichigo_Kurosaki.png"/>
                             <p class="character-name">Ichigo Kurosaki</p>
                         </div>
                         <div class="data">
-                            <span class="character">
+                            <span class="character-options">
+                                <div>
+                                    <img class="character-icon" id="play" src="res/icons/play.png">
+                                    <img class="character-icon" src="res/icons/favourite-full.png">
+                                    <img class="character-icon" src="res/icons/up.png">
+                                    <img class="character-icon" src="res/icons/down.png">
+                                </div>
+                                <img class="character-icon" src="res/icons/down-arrow.png"/>
+                            </span>
+                            <p class="character-options"><span class="recommendation">Recommended at 96%</span><span class="arc-number">15 arcs</span></p>
+                            <ul class="categories">
+                                <li><span>Human</span></li>
+                                <li><span>Shinigami</span></li>
+                                <li><span>Quincy</span></li></ul>
+                        </div>
+                    </li>
+                    <li class="single-character">
+                        <div>
+                            <img class="character-image" src="res/characters/kanonji.png"/>
+                            <p class="character-name">Don Kanonji</p>
+                        </div>
+                        <div class="data">
+                            <span class="character-options">
+                                <div>
+                                    <img class="character-icon" id="play" src="res/icons/play.png">
+                                    <img class="character-icon" src="res/icons/favourite-full.png">
+                                    <img class="character-icon" src="res/icons/up.png">
+                                    <img class="character-icon" src="res/icons/down.png">
+                                </div>
+                                <img class="character-icon" src="res/icons/down-arrow.png"/>
+                            </span>
+                            <p class="character-options"><span class="recommendation">Recommended at 97%</span><span class="arc-number">15 arcs</span></p>
+                            <ul class="categories">
+                                <li><span>Human</span></li>
+                        </div>
+                    </li>
+                    <li class="single-character">
+                        <div>
+                            <img class="character-image" src="res/characters/grimmjow.png"/>
+                            <p class="character-name">Grimmjow Jaegerjaquez</p>
+                        </div>
+                        <div class="data">
+                            <span class="character-options">
+                                <div>
+                                    <img class="character-icon" id="play" src="res/icons/play.png">
+                                    <img class="character-icon" src="res/icons/favourite-full.png">
+                                    <img class="character-icon" src="res/icons/up.png">
+                                    <img class="character-icon" src="res/icons/down.png">
+                                </div>
+                                <img class="character-icon" src="res/icons/down-arrow.png"/>
+                            </span>
+                            <p class="character-options"><span class="recommendation">Recommended at 90%</span><span class="arc-number">5 arcs</span></p>
+                            <ul class="categories">
+                                <li><span>Arrancar</span></li>
+                        </div>
+                    </li>
+                    <li class="single-character">
+                        <div>
+                            <img class="character-image" src="res/characters/ulquiorra.png"/>
+                            <p class="character-name">Ulquiorra Cifer</p>
+                        </div>
+                        <div class="data">
+                            <span class="character-options">
+                                <div>
+                                    <img class="character-icon" id="play" src="res/icons/play.png">
+                                    <img class="character-icon" src="res/icons/favourite-full.png">
+                                    <img class="character-icon" src="res/icons/up.png">
+                                    <img class="character-icon" src="res/icons/down.png">
+                                </div>
+                                <img class="character-icon" src="res/icons/down-arrow.png"/>
+                            </span>
+                            <p class="character-options"><span class="recommendation">Recommended at 100%</span><span class="arc-number">4 arcs</span></p>
+                            <ul class="categories">
+                                <li><span>Arrancar</span></li>
+                        </div>
+                    </li>
+                    <li class="single-character">
+                        <div>
+                            <img class="character-image" src="res/characters/aizen.png"/>
+                            <p class="character-name">Sosuke Aizen</p>
+                        </div>
+                        <div class="data">
+                            <span class="character-options">
+                                <div>
+                                    <img class="character-icon" id="play" src="res/icons/play.png">
+                                    <img class="character-icon" src="res/icons/favourite-full.png">
+                                    <img class="character-icon" src="res/icons/up.png">
+                                    <img class="character-icon" src="res/icons/down.png">
+                                </div>
+                                <img class="character-icon" src="res/icons/down-arrow.png"/>
+                            </span>
+                            <p class="character-options"><span class="recommendation">Recommended at 100%</span><span class="arc-number">9 arcs</span></p>
+                            <ul class="categories">
+                                <li><span>Shinigami</span></li>
+                        </div>
+                    </li>
+                </ul>
+            </li>
+            <li class="section">
+                <p>Most Viewed</p>
+                <ul class="character-container full">
+                    <li class="single-character">
+                        <div>
+                            <img class="character-image" src="res/characters/grimmjow.png"/>
+                            <p class="character-name">Grimmjow Jaegerjaquez</p>
+                        </div>
+                        <div class="data">
+                            <span class="character-options">
                                 <div>
                                     <img class="character-icon" id="play" src="res/icons/play.png">
                                     <img class="character-icon" src="res/icons/favourite-empty.png">
                                     <img class="character-icon" src="res/icons/up.png">
                                     <img class="character-icon" src="res/icons/down.png">
-                                    <img class="character-icon" src="res/icons/down-arrow.png"/>
                                 </div>
+                                <img class="character-icon" src="res/icons/down-arrow.png"/>
                             </span>
-                            <p><span class="recommendation">Recommended at 96%</span><span class="arc-number">15 arcs</span></p>
-                            <ul class="categories"><li>Human</li><li>Shinigami</li><li>Quincy</li></ul>
+                            <p class="character-options"><span class="recommendation">Recommended at 97%</span><span class="arc-number">5 arcs</span></p>
+                            <ul class="categories">
+                                <li><span>Arrancar</span></li>
+                        </div>
+                    </li>
+                    <li class="single-character">
+                        <div>
+                            <img class="character-image" src="res/characters/Chad.png"/>
+                            <p class="character-name">Yasutora Sado</p>
+                        </div>
+                        <div class="data">
+                            <span class="character-options">
+                                <div>
+                                    <img class="character-icon" id="play" src="res/icons/play.png">
+                                    <img class="character-icon" src="res/icons/favourite-empty.png">
+                                    <img class="character-icon" src="res/icons/up.png">
+                                    <img class="character-icon" src="res/icons/down.png">
+                                </div>
+                                <img class="character-icon" src="res/icons/down-arrow.png"/>
+                            </span>
+                            <p class="character-options"><span class="recommendation">Recommended at 96%</span><span class="arc-number">15 arcs</span></p>
+                            <ul class="categories">
+                                <li><span>Human</span></li>
+                        </div>
+                    </li>
+                    <li class="single-character">
+                        <div>
+                            <img class="character-image" src="res/characters/isshin.png"/>
+                            <p class="character-name">Isshin Kurosaki</p>
+                        </div>
+                        <div class="data">
+                            <span class="character-options">
+                                <div>
+                                    <img class="character-icon" id="play" src="res/icons/play.png">
+                                    <img class="character-icon" src="res/icons/favourite-empty.png">
+                                    <img class="character-icon" src="res/icons/up.png">
+                                    <img class="character-icon" src="res/icons/down.png">
+                                </div>
+                                <img class="character-icon" src="res/icons/down-arrow.png"/>
+                            </span>
+                            <p class="character-options"><span class="recommendation">Recommended at 76%</span><span class="arc-number">7 arcs</span></p>
+                            <ul class="categories">
+                                <li><span>Human</span></li><li><span>Shinigami</span></li>
+                        </div>
+                    </li>
+                    <li class="single-character">
+                        <div>
+                            <img class="character-image" src="res/characters/aizen.png"/>
+                            <p class="character-name">Sosuke Aizen</p>
+                        </div>
+                        <div class="data">
+                            <span class="character-options">
+                                <div>
+                                    <img class="character-icon" id="play" src="res/icons/play.png">
+                                    <img class="character-icon" src="res/icons/favourite-empty.png">
+                                    <img class="character-icon" src="res/icons/up.png">
+                                    <img class="character-icon" src="res/icons/down.png">
+                                </div>
+                                <img class="character-icon" src="res/icons/down-arrow.png"/>
+                            </span>
+                            <p class="character-options"><span class="recommendation">Recommended at 100%</span><span class="arc-number">9 arcs</span></p>
+                            <ul class="categories">
+                                <li><span>Shinigami</span></li>
+                        </div>
+                    </li>
+                </ul>
+            </li>
+            <li class="section">
+                <p>Shinigami</p>
+                <ul class="character-container full">
+                    <li class="single-character">
+                        <div>
+                            <img class="character-image" src="res/characters/aizen.png"/>
+                            <p class="character-name">Sosuke Aizen</p>
+                        </div>
+                        <div class="data">
+                            <span class="character-options">
+                                <div>
+                                    <img class="character-icon" id="play" src="res/icons/play.png">
+                                    <img class="character-icon" src="res/icons/favourite-empty.png">
+                                    <img class="character-icon" src="res/icons/up.png">
+                                    <img class="character-icon" src="res/icons/down.png">
+                                </div>
+                                <img class="character-icon" src="res/icons/down-arrow.png"/>
+                            </span>
+                            <p class="character-options"><span class="recommendation">Recommended at 100%</span><span class="arc-number">9 arcs</span></p>
+                            <ul class="categories">
+                                <li><span>Shinigami</span></li>
+                        </div>
+                    </li>
+                    <li class="single-character">
+                        <div>
+                            <img class="character-image" src="res/characters/rukia.png"/>
+                            <p class="character-name">Rukia Kuchiki</p>
+                        </div>
+                        <div class="data">
+                            <span class="character-options">
+                                <div>
+                                    <img class="character-icon" id="play" src="res/icons/play.png">
+                                    <img class="character-icon" src="res/icons/favourite-empty.png">
+                                    <img class="character-icon" src="res/icons/up.png">
+                                    <img class="character-icon" src="res/icons/down.png">
+                                </div>
+                                <img class="character-icon" src="res/icons/down-arrow.png"/>
+                            </span>
+                            <p class="character-options"><span class="recommendation">Recommended at 81%</span><span class="arc-number">15 arcs</span></p>
+                            <ul class="categories">
+                                <li><span>Shinigami</span></li>
+                        </div>
+                    </li>
+                    <li class="single-character">
+                        <div>
+                            <img class="character-image" src="res/characters/Ichigo_Kurosaki.png"/>
+                            <p class="character-name">Ichigo Kurosaki</p>
+                        </div>
+                        <div class="data">
+                            <span class="character-options">
+                                <div>
+                                    <img class="character-icon" id="play" src="res/icons/play.png">
+                                    <img class="character-icon" src="res/icons/favourite-empty.png">
+                                    <img class="character-icon" src="res/icons/up.png">
+                                    <img class="character-icon" src="res/icons/down.png">
+                                </div>
+                                <img class="character-icon" src="res/icons/down-arrow.png"/>
+                            </span>
+                            <p class="character-options"><span class="recommendation">Recommended at 96%</span><span class="arc-number">15 arcs</span></p>
+                            <ul class="categories">
+                                <li><span>Human</span></li>
+                                <li><span>Shinigami</span></li>
+                                <li><span>Quincy</span></li></ul>
+                        </div>
+                    </li>
+                    <li class="single-character">
+                        <div>
+                            <img class="character-image" src="res/characters/isshin.png"/>
+                            <p class="character-name">Isshin Kurosaki</p>
+                        </div>
+                        <div class="data">
+                            <span class="character-options">
+                                <div>
+                                    <img class="character-icon" id="play" src="res/icons/play.png">
+                                    <img class="character-icon" src="res/icons/favourite-empty.png">
+                                    <img class="character-icon" src="res/icons/up.png">
+                                    <img class="character-icon" src="res/icons/down.png">
+                                </div>
+                                <img class="character-icon" src="res/icons/down-arrow.png"/>
+                            </span>
+                            <p class="character-options"><span class="recommendation">Recommended at 76%</span><span class="arc-number">7 arcs</span></p>
+                            <ul class="categories">
+                                <li><span>Human</span></li>
+                                <li><span>Shinigami</span></li>
+                        </div>
+                    </li>
+                    <li class="single-character">
+                        <div>
+                            <img class="character-image" src="res/characters/shunsui.png"/>
+                            <p class="character-name">Shunsui Kyoraku</p>
+                        </div>
+                        <div class="data">
+                            <span class="character-options">
+                                <div>
+                                    <img class="character-icon" id="play" src="res/icons/play.png">
+                                    <img class="character-icon" src="res/icons/favourite-empty.png">
+                                    <img class="character-icon" src="res/icons/up.png">
+                                    <img class="character-icon" src="res/icons/down.png">
+                                </div>
+                                <img class="character-icon" src="res/icons/down-arrow.png"/>
+                            </span>
+                            <p class="character-options"><span class="recommendation">Recommended at 99%</span><span class="arc-number">15 arcs</span></p>
+                            <ul class="categories">
+                                <li><span>Shinigami</span></li>
+                        </div>
+                    </li>
+                </ul>
+            </li>
+            <li class="section">
+                <p>Human</p>
+                <ul class="character-container full">
+                    <li class="single-character">
+                        <div>
+                            <img class="character-image" src="res/characters/Ichigo_Kurosaki.png"/>
+                            <p class="character-name">Ichigo Kurosaki</p>
+                        </div>
+                        <div class="data">
+                            <span class="character-options">
+                                <div>
+                                    <img class="character-icon" id="play" src="res/icons/play.png">
+                                    <img class="character-icon" src="res/icons/favourite-empty.png">
+                                    <img class="character-icon" src="res/icons/up.png">
+                                    <img class="character-icon" src="res/icons/down.png">
+                                </div>
+                                <img class="character-icon" src="res/icons/down-arrow.png"/>
+                            </span>
+                            <p class="character-options"><span class="recommendation">Recommended at 96%</span><span class="arc-number">15 arcs</span></p>
+                            <ul class="categories">
+                                <li><span>Human</span></li>
+                                <li><span>Shinigami</span></li>
+                                <li><span>Quincy</span></li></ul>
+                        </div>
+                    </li>
+                    <li class="single-character">
+                        <div>
+                            <img class="character-image" src="res/characters/Orihime.jpg"/>
+                            <p class="character-name">Inoue Orihime</p>
+                        </div>
+                        <div class="data">
+                            <span class="character-options">
+                                <div>
+                                    <img class="character-icon" id="play" src="res/icons/play.png">
+                                    <img class="character-icon" src="res/icons/favourite-empty.png">
+                                    <img class="character-icon" src="res/icons/up.png">
+                                    <img class="character-icon" src="res/icons/down.png">
+                                </div>
+                                <img class="character-icon" src="res/icons/down-arrow.png"/>
+                            </span>
+                            <p class="character-options"><span class="recommendation">Recommended at 76%</span><span class="arc-number">15 arcs</span></p>
+                            <ul class="categories">
+                                <li><span>Human</span></li>
+                        </div>
+                    </li>
+                    <li class="single-character">
+                        <div>
+                            <img class="character-image" src="res/characters/Chad.png"/>
+                            <p class="character-name">Yasutora Sado</p>
+                        </div>
+                        <div class="data">
+                            <span class="character-options">
+                                <div>
+                                    <img class="character-icon" id="play" src="res/icons/play.png">
+                                    <img class="character-icon" src="res/icons/favourite-empty.png">
+                                    <img class="character-icon" src="res/icons/up.png">
+                                    <img class="character-icon" src="res/icons/down.png">
+                                </div>
+                                <img class="character-icon" src="res/icons/down-arrow.png"/>
+                            </span>
+                            <p class="character-options"><span class="recommendation">Recommended at 84%</span><span class="arc-number">15 arcs</span></p>
+                            <ul class="categories">
+                                <li><span>Human</span></li>
+                        </div>
+                    </li>
+                    <li class="single-character">
+                        <div>
+                            <img class="character-image" src="res/characters/Tatsuki.png"/>
+                            <p class="character-name">Tatsuki Arisawa</p>
+                        </div>
+                        <div class="data">
+                            <span class="character-options">
+                                <div>
+                                    <img class="character-icon" id="play" src="res/icons/play.png">
+                                    <img class="character-icon" src="res/icons/favourite-empty.png">
+                                    <img class="character-icon" src="res/icons/up.png">
+                                    <img class="character-icon" src="res/icons/down.png">
+                                </div>
+                                <img class="character-icon" src="res/icons/down-arrow.png"/>
+                            </span>
+                            <p class="character-options"><span class="recommendation">Recommended at 43%</span><span class="arc-number">6 arcs</span></p>
+                            <ul class="categories">
+                                <li><span>Human</span></li>
+                        </div>
+                    </li>
+                    <li class="single-character">
+                        <div>
+                            <img class="character-image" src="res/characters/Keigo.png"/>
+                            <p class="character-name">Keigo Asano</p>
+                        </div>
+                        <div class="data">
+                            <span class="character-options">
+                                <div>
+                                    <img class="character-icon" id="play" src="res/icons/play.png">
+                                    <img class="character-icon" src="res/icons/favourite-empty.png">
+                                    <img class="character-icon" src="res/icons/up.png">
+                                    <img class="character-icon" src="res/icons/down.png">
+                                </div>
+                                <img class="character-icon" src="res/icons/down-arrow.png"/>
+                            </span>
+                            <p class="character-options"><span class="recommendation">Recommended at 56%</span><span class="arc-number">6 arcs</span></p>
+                            <ul class="categories">
+                                <li><span>Human</span></li>
                         </div>
                     </li>
                 </ul>
@@ -110,13 +493,34 @@
         </div>
     </footer>
     <script>
-        unmute.addEventListener('click', function() {
+        trailer.addEventListener('ended', setupRepeat);
+        unmute.addEventListener('click', changeVolume);
+
+        function changeVolume() {
             trailer.muted = !trailer.muted;
+            updateVolumeIcon();
+        }
+
+        function updateVolumeIcon() {
             if (trailer.muted) {
                 unmute.src="res/icons/mute.png";
             } else {
                 unmute.src="res/icons/volume.png";
             }
-        });
+        }
+
+        function setupRepeat() {
+            console.log("end");
+            unmute.removeEventListener('click', changeVolume());
+            unmute.addEventListener('click', repeatVideo);
+            unmute.src="res/icons/repeat.png";
+        }
+
+        function repeatVideo() {
+            unmute.removeEventListener('click', repeatVideo);
+            unmute.addEventListener('click', changeVolume);
+            updateVolumeIcon();
+            trailer.play();
+        }
     </script>
 </body>
