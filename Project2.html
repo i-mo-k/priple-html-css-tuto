@@ -3,6 +3,120 @@
     <meta charset="utf-8"/>
     <title>Bleach Fandom</title>
     <link rel="stylesheet" href="Project2.css"/>
+    <link rel="icon" href="res/icons/logo.png">
 </head>
 <body>
+    <video id="trailer" class="character" autoplay muted="false">
+        <source src="res/Bleach New Season 2021 Opening.mp4" type="video/mp4"/>
+    </video>
+    <header>
+        <div id="head">
+            <span>
+                <a href="Project2.html"></a><img id="logo" alt="Logo" src="res/icons/long-logo.png"/></a>
+                <a href="Project2.html">Home page</a>
+                <a href="Project404.html">Series</a>
+                <a href="Project404.html">Movies</a>
+                <a href="Project404.html">Most viewed</a>
+                <a href="Project404.html">My list</a>
+            </span>
+            <span>
+                <a href="Project404.html"></a><img class="icon" id="search" alt="search" src="res/icons/search.png"/></a>
+                <a href="Project404.html">LIVE</a>
+                <a href="Project404.html"></a><img class="icon" id="gift" alt="gift" src="res/icons/gift.png"/></a>
+                <img class="icon" id="notifications" alt="bell" src="res/icons/bell.png"/>
+                <img id="avatar" alt="avatar" src="res/icons/avatar.jpg"/>
+            </span>
+        </div>
+        <div id="hot">
+            <span>
+                <img class="icon" alt="N series" src="res/icons/logo.png"/> SERIES
+                <br/>
+                <img id="series-title" alt="title" src="res/icons/bleach.png"/>
+                <p id="ad">Coming soon</p>
+                <p id="synopsis">
+                    Within the Shinigami Research and Development Institute, the 12th Division discovers that
+                    Hollows are being destroyed without a trace in large groups,
+                    causing Mayuri Kurotsuchi to note that only one group could achieve this.
+                </p>
+                <div>
+                    <button id="watch" class="options"><img src="res/icons/play.png"/>Watch</button>
+                    <button id="more" class="options"><img src="res/icons/info.png"/>More infos</button>
+                </div>
+            </span>
+            <div id="hot-details">
+                <img class="icon-button" id="unmute" alt="unmute" src="res/icons/mute.png"/><p id="age-limit">16+</p>
+                
+            </div>
+        </div>
+    </header>
+    <article>
+        <ul>
+            <li class="section">
+                <p>Favourites</p>
+                <ul class="character-container">
+                    <li class="single-character">
+                        <div>
+                            <img class="single-character-image" src="res/characters/Ichigo_Kurosaki.png"/>
+                            <p class="character-name">Ichigo Kurosaki</p>
+                        </div>
+                        <div class="data">
+                            <span class="character">
+                                <div>
+                                    <img class="character-icon" id="play" src="res/icons/play.png">
+                                    <img class="character-icon" src="res/icons/favourite-empty.png">
+                                    <img class="character-icon" src="res/icons/up.png">
+                                    <img class="character-icon" src="res/icons/down.png">
+                                    <img class="character-icon" src="res/icons/down-arrow.png"/>
+                                </div>
+                            </span>
+                            <p><span class="recommendation">Recommended at 96%</span><span class="arc-number">15 arcs</span></p>
+                            <ul class="categories"><li>Human</li><li>Shinigami</li><li>Quincy</li></ul>
+                        </div>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </article>
+    <footer>
+        <div>
+            <img class="icon" alt="Facebook" src="res/icons/facebook.png"/>
+            <img class="icon" alt="Instagram" src="res/icons/instagram.png"/>
+            <img class="icon" alt="Twitter" src="res/icons/twitter.png"/>
+            <img class="icon" alt="Youtube" src="res/icons/youtube.png"/>
+        </div>
+        <div id="map">
+            <ul id="map_content">
+                <li>Audio and subtitles</li>
+                <li>Press</li>
+                <li>Privacy</li>
+                <li>Contact Us</li>
+                <li>Audiodescription</li>
+                <li>Investors Contact</li>
+                <li>Legal Information</li>
+                <li>Help Center</li>
+                <li>Recruiting</li>
+                <li>Cookie Preferences</li>
+                <li>Gift Card</li>
+                <li>Terms of Use</li>
+                <li>Legal Mentions</li>
+            </ul>
+        </div>
+        <div><span id="service_code">Service Code</span></div>
+        <div class="lic">
+            &copy; 2001-2021 Bleach Fandom {i-95dfs18vz315e2r1qqs}
+            <br/>
+            Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from
+            <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
+        </div>
+    </footer>
+    <script>
+        unmute.addEventListener('click', function() {
+            trailer.muted = !trailer.muted;
+            if (trailer.muted) {
+                unmute.src="res/icons/mute.png";
+            } else {
+                unmute.src="res/icons/volume.png";
+            }
+        });
+    </script>
 </body>
